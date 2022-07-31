@@ -3,7 +3,7 @@ package codej.programmers.demo.level1;
 import java.util.Scanner;
 
 
-public class chapter1_1 {
+public class Chapter1_1 {
 
     public static int solution(int n){
         int sum =0;
@@ -17,6 +17,6 @@ public class chapter1_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        System.out.println(chapter1_1.solution(n));
+        System.out.println(Chapter1_1.solution(n));
     }
 }
