@@ -4,14 +4,15 @@ import java.util.Arrays;
 
 public class lab {
     public static void main(String[] args) {
-        String str = "010-4623-2891";
-        int strLength = str.length();
-        int i = str.lastIndexOf("-");
 
-        System.out.println("str = " + str);
+        int a = 5;
+        int b= 2;
 
-        System.out.println("strLength = " + strLength);
-        System.out.println(i);
+        int a_b = a % b;
+        int b_a = b % a;
+
+        System.out.println("a_b = " + a_b);
+        System.out.println("b_a = " + b_a);
 
     }
 }
