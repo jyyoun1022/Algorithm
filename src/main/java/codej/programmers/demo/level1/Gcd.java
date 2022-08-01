@@ -17,9 +17,10 @@ public class Gcd {
         }
         int gcd = n*m/max;
 
-        int[] answer ={max,gcd};
-        Arrays.stream(answer).forEach(i-> System.out.println(i));
-        return answer;
+        System.out.println(" 최대 공약수 : "+max);
+        System.out.println(" 최소 공배수 : "+n*m/max);
+
+        return null;
 
     }
 
