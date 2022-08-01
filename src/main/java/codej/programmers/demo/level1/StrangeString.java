@@ -11,7 +11,7 @@ public class StrangeString {
 
         for (String str : list) {
             count = str.contains(" ")? 0 : count+1;
-            answer += (count %2 == 0) ? str.toUpperCase() : str.toLowerCase();
+            answer += (count %2 == 0) ? str.toLowerCase() : str.toUpperCase();
 
         }
         return answer;
