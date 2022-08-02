@@ -2,7 +2,6 @@ package codej.programmers.demo.level1;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class Gcd {
 
     public static int[] solution(int n , int m){
