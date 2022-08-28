@@ -1,25 +1,21 @@
 package codej.programmers.demo.level1;
 
+import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Scanner;
 public class Gcd {
 
     public static int[] solution(int n , int m){
-        int max = Math.max(n, m);
-        int min = Math.min(n, m);
-        int r = 0;
+        int gcd;
+        int lcm;
+        gcd = BigInteger.valueOf(n).gcd(BigInteger.valueOf(m)).intValue();
+        lcm = n*m/gcd;
 
-        while(min != 0){
-            r = max % min;
-            max=min;
-            min=r;
-        }
-        int gcd = n*m/max;
 
-        System.out.println(" 최대 공약수 : "+max);
-        System.out.println(" 최소 공배수 : "+n*m/max);
-
-        return null;
+        System.out.println(" 최대 공약수 : "+gcd);
+        System.out.println(" 최소 공배수 : "+lcm);
+        System.out.println(" 리턴 값 : "+ Arrays.stream(new int[]{gcd,lcm}).toArray().toString());
+        return new int[]{gcd,lcm};
 
     }
 
