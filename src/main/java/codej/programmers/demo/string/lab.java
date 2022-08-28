@@ -6,8 +6,9 @@ public class lab {
 
     public static void main(String[] args) {
 
-        int a = 9;
-        long sqrt = (long)Math.sqrt(a);
-        System.out.println(sqrt);
+        System.out.println(0%2);
+        System.out.println(1%2);
+        System.out.println(2%2);
+        System.out.println(3%2);
     }
 }

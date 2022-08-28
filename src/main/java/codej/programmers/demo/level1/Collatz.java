@@ -14,7 +14,6 @@ public class Collatz {
                  num= (num % 2 == 0) ? num / 2 : num * 3 + 1;
                 answer++;
             }
-            return -1;
         }
         return answer;
     }
