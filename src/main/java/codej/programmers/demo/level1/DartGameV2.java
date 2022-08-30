@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class DartGameV2 {
     public static void main(String[] args) {
-        String dartResult = "1S2D*3T";
+        String dartResult = "1D2S#10S";
         int answer = 0;
         int[] arr = new int[3];
         int idx = 0;
@@ -12,12 +12,13 @@ public class DartGameV2 {
         char[] charArr = dartResult.toCharArray();
         for (int i = 0; i < charArr.length; i++) {
             int num = Character.getNumericValue(charArr[i]);
-            if (charArr[i] >= '0' && charArr[i] <= '9') {
+            if (num >= 0 && num <= 9) {
                 if (charArr[i] == '1' && charArr[i + 1] == '0') {
-                    arr[idx] = 10;
-                    idx++;                                  //idx=1
+                    num = 10;
+                    i++;
                 }
                 arr[idx] = num;
+                System.out.println(Arrays.toString(arr));
                idx++;
             } else {
                 switch (charArr[i]) {
@@ -40,7 +41,7 @@ public class DartGameV2 {
                         arr[idx - 1] *= -1;
                         break;
                 }
-                System.out.println(Arrays.toString(arr));
+
             }
 
 
