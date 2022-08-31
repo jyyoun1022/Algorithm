@@ -16,7 +16,7 @@ public class labsirnsadfa {
             System.out.println("i : " + i);
             if (prime[i] == true) {
                 for (int j = i; i * j <= n; j++) {
-                    System.out.println(j);
+                    System.out.println("j ; "+j);
                     prime[i * j] = false;
                 }
             }
@@ -27,5 +27,12 @@ public class labsirnsadfa {
             }
         }
         System.out.println("answer : "+answer);
+
+        for(int i =2; i<=3; i++){
+            System.out.println("=====");
+            for(int j =i; i*j <=n; j++){
+                System.out.println("j : "+j);
+            }
+        }
     }
 }
