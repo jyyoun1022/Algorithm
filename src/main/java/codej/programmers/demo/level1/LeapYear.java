@@ -16,10 +16,15 @@ public class LeapYear {
 
         Calendar c = Calendar.getInstance();
         c.set(2016,a-1,b);
-        String[] answer ={"SUN", "MON","TUE","WED", "THU", "FRI", "SAT"};
+        String[] answer ={ "MON","TUE","WED", "THU", "FRI", "SAT","SUN"};
 
-        int weekday = c.get(Calendar.DAY_OF_WEEK);
+        int weekday = c.get(c.DAY_OF_WEEK);
+        System.out.println(answer[weekday]);
+        int month = c.get(c.DAY_OF_MONTH);
+        System.out.println(month);
+        int year = c.get(c.DAY_OF_YEAR);
+        System.out.println(year);
 
-        System.out.println(answer[weekday-1]);
+
     }
 }
