@@ -28,9 +28,6 @@ public class 비밀지도 {
 //                    encoding.insert(n-binary.length()-1,"0");
 //                }
 //            }
-
-
-
             for(int j=0; j<encoding.length(); j++){//10111일 때 0은 공백으로,1은 #으로 입력하기 위한 루프
                 Character getChar = encoding.charAt(j);//charAt(i) = char 형이지만 equals()메서드를 사용하기위해 Character로 변환
                 if(getChar.equals('1')){
