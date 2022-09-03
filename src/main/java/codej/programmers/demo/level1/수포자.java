@@ -38,7 +38,7 @@ public class 수포자 {
             }
         }
 
-        Integer max = Collections.max(correctList);
+        int max = Collections.max(correctList);
         System.out.println(max);
         List<Integer> returnList  = new ArrayList<>();
         for(int i=1; i<= correctList.size(); i++){
