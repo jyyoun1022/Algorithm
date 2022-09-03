@@ -20,10 +20,8 @@ public class 체육복 {
         for(int i : lost){//도난 당한 사람들은 -1
             total[i]--;
         }
-        System.out.println("초기 total : "+Arrays.toString(total));
-        for(int i=1; i<= n; i++){
+        for(int i=1; i <= n; i++){
             if(total[i] == -1){
-                System.out.println(Arrays.toString(total));
                 if(total[i-1] == 1){
                     total[i]++;
                     total[i-1]--;
@@ -31,16 +29,13 @@ public class 체육복 {
                     total[i]++;
                     total[i+1]--;
                 }
-
             }
         }
-        System.out.println(Arrays.toString(total));
         for(int i=1; i<=n; i++){
             if(total[i]>=0){
                 answer++;
             }
         }
         System.out.println(answer);
-
     }
 }
