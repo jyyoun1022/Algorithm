@@ -14,7 +14,6 @@ public class Harshad {
             arr /= 10;
         }
 
-        answer = (x % sum ==0)? true : false;
 
         return answer ;
 
