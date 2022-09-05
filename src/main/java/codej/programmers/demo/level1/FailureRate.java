@@ -38,23 +38,19 @@ public class FailureRate {
         for(int i=0; i<N; i++){
             double max = -1;
             int index =0;
-
             for(int j=0; j<N; j++){
                 if(max < fail_list.get(j)){
                     max = fail_list.get(j);
                     index = j;
                 }
             }
-
             fail_list.set(index,-1.0);
             answer[i] = index+1;
 
         }
 
 
-
-
-
+        System.out.println(Arrays.toString(answer));
         }
 
     }

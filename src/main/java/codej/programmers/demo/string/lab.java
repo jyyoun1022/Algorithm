@@ -1,14 +1,19 @@
 package codej.programmers.demo.string;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class lab {
 
     public static void main(String[] args) {
 
-        System.out.println(0%2);
-        System.out.println(1%2);
-        System.out.println(2%2);
-        System.out.println(3%2);
+        Stack<Integer> stack = new Stack<>();
+
+        for(int i=0; i<9; i++){
+            stack.push(i);
+        }
+        for (Integer integer : stack) {
+            System.out.println(integer);
+        }
+
     }
 }

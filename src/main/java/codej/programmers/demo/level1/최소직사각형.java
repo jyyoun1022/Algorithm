@@ -4,7 +4,6 @@ public class 최소직사각형 {
 
     public int solution(int[][] sizes){
         int answer =0;
-
         int garo = 0;
         int sero = 0;
         int temp = 0;

@@ -9,7 +9,7 @@ public class Math_sqrt {
         System.out.println("임의의 양의 정수 n을 입력해주세요.");
         int n = sc.nextInt();
 
-        double sqrt = Math.sqrt(5);//11.0
+        double sqrt = Math.sqrt(5);
         int answer =0;
         if(Math.pow(sqrt,2) == n){
             answer = (int)Math.pow(sqrt+1,2);
