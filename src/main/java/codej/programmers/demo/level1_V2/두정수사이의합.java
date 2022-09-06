@@ -6,8 +6,8 @@ public class 두정수사이의합 {
         if(a == b){
             return answer=a;
         }
-        int max = Integer.max(a,b);
-        int min = Integer.min(a,b);
+        int max = Math.max(a,b);
+        int min = Math.min(a,b);
         for(int i=min; i<=max; i++){
             answer += i;
         }
