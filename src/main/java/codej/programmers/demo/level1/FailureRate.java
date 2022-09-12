@@ -31,7 +31,7 @@ public class FailureRate {
                 failRate = (double) notClear_list.size() / stage_list.size();
             }
             fail_list.add(failRate);
-
+            System.out.println(Arrays.toString(fail_list.toArray()));
 
         }
 
