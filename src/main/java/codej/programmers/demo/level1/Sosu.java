@@ -13,7 +13,6 @@ public class Sosu {
                 for (int k = j + 1; k < nums.length; k++) {
                     sum = nums[i] + nums[j] + nums[k];
                     answer += isPrime(sum) ? 1 : 0;
-
                 }
             }
         }
